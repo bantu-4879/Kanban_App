@@ -102,37 +102,37 @@ info:
       <tbody>
       <tr>
         <td>Course</td>
-        <td>COURSE001</td>
+        <td>COURSE01</td>
         <td>Course Name is required and should be string.</td>
       </tr>
       <tr>
         <td>Course</td>
-        <td>COURSE002</td>
+        <td>COURSE02</td>
         <td>Course Code is required and should be string.</td>
       </tr>
       <tr>
         <td>Course</td>
-        <td>COURSE003</td>
+        <td>COURSE03</td>
         <td> Course Description should be string.</td>
       </tr>
       <tr>
         <td>Student</td>
-        <td>STUDENT001</td>
+        <td>STUDENT01</td>
         <td>Roll Number required and should be String </td>
       </tr>
       <tr>
         <td>Student</td>
-        <td>STUDENT002</td>
+        <td>STUDENT02</td>
         <td>First Name is required and should be String </td>
       </tr>
       <tr>
         <td>Student</td>
-        <td>STUDENT003</td>
+        <td>STUDENT03</td>
         <td>Last Name is String </td>
       </tr>
       <tr>
         <td>Enrollment</td>
-        <td>ENROLLMENT001</td>
+        <td>ENROLLMENT01</td>
         <td>Course does not exist</td>
       </tr>
       <tr>
