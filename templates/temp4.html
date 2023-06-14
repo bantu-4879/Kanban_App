@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c6{-webkit-text-decoration-skip:none;color:#0000ee;font-weight:700;text-decoration:underline;vertical-align:baseline;text-decoration-skip-ink:none;font-size:12pt;font-family:"Arial";font-style:normal}.c19{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Arial";font-style:normal}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c3{color:#0000ee;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Arial";font-style:normal}.c9{color:#0000ee;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c8{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Arial";font-style:normal}.c15{-webkit-text-decoration-skip:none;font-weight:700;text-decoration:underline;text-decoration-skip-ink:none;font-size:12pt;font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left;height:12pt}.c12{padding-top:12pt;padding-bottom:12.8pt;line-height:1.0;text-align:left}.c4{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left}.c16{padding-top:12pt;padding-bottom:12pt;line-height:1.0;text-align:left}.c10{padding-top:12.8pt;padding-bottom:12.8pt;line-height:1.0;text-align:left}.c17{padding-top:12pt;padding-bottom:20.2pt;line-height:1.0;text-align:left}.c11{padding-top:0pt;padding-bottom:12.8pt;line-height:1.0;text-align:left}.c5{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c2{color:inherit;text-decoration:inherit}.c18{height:24pt}.c14{color:#0000ee}.c13{height:14pt}.c7{height:11pt}.title{padding-top:24pt;color:#000000;font-weight:700;font-size:36pt;padding-bottom:6pt;font-family:"Arial";line-height:1.0;page-break-after:avoid;text-align:left}.subtitle{padding-top:18pt;color:#666666;font-size:24pt;padding-bottom:4pt;font-family:"Georgia";line-height:1.0;page-break-after:avoid;font-style:italic;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:12pt;color:#000000;font-weight:700;font-size:24pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h2{padding-top:11.2pt;color:#000000;font-weight:700;font-size:18pt;padding-bottom:11.2pt;font-family:"Arial";line-height:1.0;text-align:left}h3{padding-top:12pt;color:#000000;font-weight:700;font-size:14pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h4{padding-top:12.8pt;color:#000000;font-weight:700;font-size:12pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h5{padding-top:12.8pt;color:#000000;font-weight:700;font-size:9pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h6{padding-top:18pt;color:#000000;font-weight:700;font-size:8pt;padding-bottom:18pt;font-family:"Arial";line-height:1.0;text-align:left}</style>
+    </head>
+    
+    <body class="c5 doc-content">
+
+        <p class="c4 c7">
+            <span class="c0"></span>
+        </p>
+
+        <h1 class="c4 c18">
+            <span class="c0"></span>
+        </h1>
+        
+        <p class="c17">
+            <span class="c0">Missions</span>
+        </p>
+        
+        <h3 class="c4 c13">
+            <span class="c8"></span>
+        </h3>
+        
+        <p class="c16">
+            <span class="c0">Dashboard</span>
+        </p>
+        
+        <p class="c4">
+            <span class="c0">{% for card in result %}</span>
+        </p>
+        
+        <p class="c4 c7">
+            <span class="c0"></span>
+        </p>
+        
+        <h3 class="c4 c13">
+            <span class="c8"></span>
+        </h3>
+        
+        <p class="c12">
+            <span class="c0">{{ card["card_title"] }}</span>
+        </p>
+        
+        <h4 class="c11">
+            <span class="c19">{{ card["card_content"] }}</span>
+        </h4>
+        
+        <p class="c4 c7">
+            <span class="c0"></span>
+        </p>
+        
+        <p class="c4">
+            <span class="c0">Deadline : {{ card["card_deadline"] }}</span>
+        </p>
+        
+        <p class="c4">
+            <span class="c0">Status : {{ card["card_status"] }}</span>
+        </p>
+        
+        <p class="c4">
+            <span class="c0">Update Delete</span>
+        </p>
+        
+        <p class="c4">
+            <span class="c0">{% endfor %}</span>
+        </p>
+        
+        <p class="c4 c7">
+            <span class="c0"></span>
+        </p>
+        
+        <p class="c4">
+            <span class="c14">
+                <a class="c2" href="https://www.google.com/url?q=http://docs.google.com/card/add&amp;sa=D&amp;source=editors&amp;ust=1686726008403323&amp;usg=AOvVaw3aruLkqUEJgbD2zWRC3-U1">Add Mission</a>
+            </span>
+        </p>
+        
+        <p class="c4 c7">
+            <span class="c9"></span>
+        </p>
+        
+        <h4 class="c1">
+            <span class="c3"></span>
+        </h4>
+        
+        <p class="c10">
+            <span class="c14 c15">
+                <a class="c2" href="https://www.google.com/url?q=http://docs.google.com/list&amp;sa=D&amp;source=editors&amp;ust=1686726008403720&amp;usg=AOvVaw2wS1yB5gZoK3icO7sKOlb7">Back</a>
+            </span>
+        </p>
+
+        <h4 class="c1">
+            <span class="c6"></span>
+        </h4>
+        
+        <p class="c10">
+            <span class="c15 c14">
+                <a class="c2" href="https://www.google.com/url?q=http://docs.google.com/summary&amp;sa=D&amp;source=editors&amp;ust=1686726008404107&amp;usg=AOvVaw2USb77ayxmQlfu54Bzl1Ih">Summary</a>
+            </span>
+        </p>
+    
+    </body>
+    
+</html>
