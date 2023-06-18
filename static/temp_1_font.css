@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+body{
+margin: 0;
+background-color: #011127;
+width: 100%;
+height: 100%;
+}
+
+.section{
+height: 754px;
+display: block;
+position: relative;
+}
+
+.background{
+display: block;
+width: 100%;
+position: absolute;
+height: 100%;
+margin: 0;
+padding: 0;
+background-color: #000;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.arrow{
+position: absolute;
+left: 50%;
+bottom: 20px;
+width: 20px;
+margin: 0 0 0 -15px;
+}
+
+.arrow svg path {
+fill: none;
+stroke: #fff;
+}
+
+.head-title{
+position: absolute;
+top: 21%;
+left: 10%;
+color: #ffffff;
+text-transform: uppercase;
+width: 80%;
+text-align: center;
+border-bottom: 1px solid #ffffff;
+}
+
+
+.head-title h1{
+font: 100px/95px D-DIN-Bold,Arial,Verdana,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+.minor-heading
+{
+top: 43%;
+left: 10%;
+width: 80%;
+position: absolute;
+text-transform: uppercase;
+text-align: center;
+color: #ffffff;
+}
+
+.minor-heading h3
+{
+font: 40px/85px D-DIN-Bold,Arial,Verdana,sans-serif;
+font-weight: 400;
+font-style: normal;
+margin-bottom: 5px;
+letter-spacing: 2px;
+}
+
+.tiles
+{
+position: absolute;
+top: 25%;
+left: 30.5%;
+width: 600px;
+height: 450px;
+background-color: #ffffff;
+border-radius: 15px;
+box-shadow: 0 0 15px 5px #fffefe;
+color: #2E3C40;
+}
+
+.tiles h3
+{
+font-size: 3.5em;
+font-weight: 600;
+line-height: 1;
+padding-bottom: 10px;
+margin: 0 35px 0.14em;
+border-bottom: 2px solid #011127;
+font-family: 'Open Sans', sans-serif;
+transition: color .45s ease, border .45s ease;
+text-align: center;
+margin-top: 35px;
+}
+
+.tiles h4
+{
+text-transform: uppercase;
+font-size: 1.125em;
+font-weight: 700;
+line-height: 1;
+letter-spacing: 0.1em;
+margin: 0 0 1.777777778em;
+transition: color .45s ease;
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+margin-top: 35px;
+}
+
+
+.links
+{
+position: absolute;
+
+}
+
+.links .mis-link
+{
+
+margin-left: 184px;
+margin-top: 50px;
+width: 250px;
+height: 50px;
+
+}
+
+.mis-link a{
+display: flex;
+width: 235px;
+border-radius: 40px;
+border: 1px solid #000;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.75em;
+font-weight: 600;
+justify-content: center;
+border: 1px solid #000;
+border-radius: 40px;
+color: #000;
+}
+
+
+.mis-link a:hover{
+color: #fff;
+background-color: #3f3b6a;
+border: 1px solid #3f3b6a;
+box-shadow: 0 0 5px #3f3b6a,
+              0 0 25px #3f3b6a,
+              0 0 50px #3f3b6a,
+              0 0 100px #3f3b6a;
+}
+
+.action{
+margin-top: 75px;
+display: grid;
+grid-auto-flow: column;
+justify-content: center;
+width: 600px;
+height: 50px;
+gap: 15px 225px;
+}
+
+
+.action a{
+font-family: 'Open Sans', sans-serif;
+font-size: 1.3em;
+font-weight: 600;
+display: flex;
+width: 150px;
+justify-content: center;
+border: 1px solid #000;
+border-radius: 40px;
+color: #000;
+}
+
+
+
+.action a:hover{
+color: #fff;
+background-color: #3f3b6a;
+border: 1px solid #3f3b6a;
+box-shadow: 0 0 5px #3f3b6a,
+              0 0 25px #3f3b6a,
+              0 0 50px #3f3b6a,
+              0 0 100px #3f3b6a;
+}
+
+.add-tile{
+position: absolute;
+top: 20%;
+left: 30.5%;
+width: 600px;
+height: 250px;
+background-color: #ffffff;
+border-radius: 15px;
+box-shadow: 0 0 15px 5px #fffefe;
+color: #2E3C40;
+}
+
+
+.add-tile a{
+margin-left: 75px;
+display: flex;
+font-family: 'Open Sans', sans-serif;
+font-size: 3em;
+font-weight: 600;
+width: 75%;
+justify-content: center;
+color: var(--werr);
+}
+
+.add-tile:hover{
+--werr: #fff;
+--derr: 1px solid #fff;
+background-color: #000;
+border: 1px solid #fcf700;
+box-shadow: 0 0 5px #fcf700,
+              0 0 25px #fcf700,
+              0 0 50px #fcf700,
+              0 0 100px #fcf700;
+}
+
+.summary {
+    position: absolute;
+    top: 80%;
+    left: 30.5%;
+    width: 600px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 5px #fffefe;
+    color: #2E3C40;
+}
+
+.summary a {
+    margin-left: 75px;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    width: 75%;
+    justify-content: center;
+    color: var(--werr);
+}
+
+.summary:hover{
+--werr: #fff;
+--derr: 1px solid #fff;
+background-color: #000;
+border: 1px solid #20ed0b;
+box-shadow: 0 0 5px #20ed0b,
+              0 0 25px #20ed0b,
+              0 0 50px #20ed0b,
+              0 0 100px #20ed0b;
+}
+
+:root{
+--werr: #000;
+--derr: 1px solid #000;
+}
