@@ -68,7 +68,7 @@ html {
   }
   
   
-  .form-box form a {
+  .form-box form a{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -79,7 +79,24 @@ html {
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    cursor: default;
+  }
+
+  .form-box form a input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.0001px;
+    color: #03e9f4;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 0;
+    cursor: default;
+    visibility: 0;
   }
   
   .form-box a:hover {
