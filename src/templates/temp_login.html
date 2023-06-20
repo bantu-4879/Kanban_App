@@ -1,23 +1,35 @@
 <html>
     <head>
         <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-        <style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c3{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left;height:24pt}.c2{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left}.c0{padding-top:12pt;padding-bottom:12pt;line-height:1.0;text-align:left}.c4{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.title{padding-top:24pt;color:#000000;font-weight:700;font-size:36pt;padding-bottom:6pt;font-family:"Arial";line-height:1.0;page-break-after:avoid;text-align:left}.subtitle{padding-top:18pt;color:#666666;font-size:24pt;padding-bottom:4pt;font-family:"Georgia";line-height:1.0;page-break-after:avoid;font-style:italic;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:12pt;color:#000000;font-weight:700;font-size:24pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h2{padding-top:11.2pt;color:#000000;font-weight:700;font-size:18pt;padding-bottom:11.2pt;font-family:"Arial";line-height:1.0;text-align:left}h3{padding-top:12pt;color:#000000;font-weight:700;font-size:14pt;padding-bottom:12pt;font-family:"Arial";line-height:1.0;text-align:left}h4{padding-top:12.8pt;color:#000000;font-weight:700;font-size:12pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h5{padding-top:12.8pt;color:#000000;font-weight:700;font-size:9pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h6{padding-top:18pt;color:#000000;font-weight:700;font-size:8pt;padding-bottom:18pt;font-family:"Arial";line-height:1.0;text-align:left}</style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='temp_login_font.css') }}">
     </head>
     
-    <body class="c4 doc-content">
-        <h1 class="c1">
-            <span class="c3"></span>
-        </h1>
-        <p class="c0">
-            <span class="c3">Login</span>
-        </p>
-        
-        <p class="c2">
-            <span class="c3">Username</span>
-        </p>
-        
-        <p class="c2">
-            <span class="c3">Role</span>
-        </p>
+    <body>
+        <div class="form-box">
+        <form method="post" action="/">
+            <h1>Login</h1>
+            <div class="entry-box">
+                <input type="text" id="username" required= true>
+                <label>Username</label>
+            </div>
+
+            <div class="entry-box">
+                <input type="text" id="role" required= true>
+                <label>Role</label>
+            </div>
+            
+         
+            
+            <a>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <input type="submit">Submit
+            </a>
+        </form>
+
+        </div>
     </body>   
 </html>
