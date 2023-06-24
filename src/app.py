@@ -7,13 +7,14 @@ from flask_restful import Resource, Api, reqparse
 from werkzeug.exceptions import HTTPException
 from flask import make_response
 
-
+import os
+base_dir = os.path.abspath(os.path.dirname(__file__))
 
 
 
 # Database
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///./database.sqlite3"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///" + os.path.join(base_dir, "database.sqlite3")
 
 
 
@@ -92,16 +93,16 @@ def login():
 
     
   if request.method == "POST":
-      username = request.form["username"]
-      role = request.form["role"]
-      
+      username = request.form.get("username")
+      role = request.form.get("role")
+      print(username, role)
 
       stmt = Login(username = username, role = role)
       db.session.add(stmt)
       db.session.commit()
 
-      list_division = List.query.all()
-      return render_template("temp_1.html", list_division = list_division)
+      #list_division = List.query.all()
+      return render_template("temp_1.html")#, list_division = list_division)
 
 
 
