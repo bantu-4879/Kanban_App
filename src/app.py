@@ -101,8 +101,8 @@ def login():
       db.session.add(stmt)
       db.session.commit()
 
-      #list_division = List.query.all()
-      return render_template("temp_1.html")#, list_division = list_division)
+      list_division = List.query.all()
+      return render_template("temp_1.html", list_division = list_division)
 
 
 
