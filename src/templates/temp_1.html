@@ -48,16 +48,41 @@
       </div>
       
       <div class="tiles">
-        <h3>Missions</h3>
-        <h4>Update</h4>
-        <h4>Delete</h4>
+        <div class="links mis-link">
+          <a href="/card/{{ list['list_id']}}">
+            <h3>Mission</h3>
+          </a>
+        </div>
+
+        <div class="action">
+          <a href="/list/{{ list['list_id'] }}/update">
+            <h4>Update</h4>
+          </a>
+
+          <a href="/list/{{ list['list_id'] }}/delete">
+            <h4>Delete</h4>
+          </a>
+        </div>
+        
       </div>
     </div>
 
    
     {% endfor %}
-    
-    Summary
+
+    <div class="add-tile">
+      <a href="/list/add">
+        <h3>Add</h3>
+      </a>
+
+    </div>
+
+    <div class="section">
+      <div class="summary">
+        <a href="/summary">Summary</a>
+      </div>
+    </div>
+   
      
   </body>
 
